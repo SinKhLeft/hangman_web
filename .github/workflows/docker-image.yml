@@ -33,7 +33,7 @@ jobs:
         python -m unittest discover -p 'test*.py'
 
   build_image:
-
+    needs: build_python
     runs-on: ubuntu-latest
 
     steps:
